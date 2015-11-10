@@ -15,10 +15,10 @@ describe("Airport", function(){
   });
 
   it("prevent plane from landing when airport full", function() {
-      for (i = 0; i < 21; i++) {
+      for (i = 0; i < 20; i++) {
       airport.Land(plane);
       };
-    expect(airport.Land(plane)).toThrow(new Error("plane cannot land, airport is full"));
+    expect(function () {airport.Land(plane)} ).toThrow(new Error("plane cannot land, airport is full"));
   });
 });
 
