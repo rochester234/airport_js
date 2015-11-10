@@ -1,4 +1,4 @@
-var Airport = function () {
+Airport = function () {
   this.DEFAULT_CAPACITY = 20;
   this.capacity = 0;
 

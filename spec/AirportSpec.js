@@ -7,6 +7,7 @@ describe("Airport", function(){
   });
 
   it("airport should receive an plane", function() {
+    airport.land = jasmine.createSpy
     expect(airport.Land(plane)).toEqual(plane);
   });
 
@@ -22,6 +23,9 @@ describe("Airport", function(){
   });
 });
 
+// it("weather can be stormy", function() {
+//      spyOn(Math, "random").and.returnValue(0.9);
+//      expect(weather.isStormy).toBe(true);
 
 /*describe("FizzBuzz", function() {
   var fizzbuzz;
